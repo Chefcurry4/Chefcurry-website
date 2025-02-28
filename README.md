@@ -19,7 +19,7 @@ git clone https://github.com/Chefcurry4/chefcurry-website.git
 cd chefcurry-website
 
 ### 2️⃣ Open the Website Locally
-Simply open index.html in your browser:
+Simply open index.html in your browser: <br>
 open index.html  # Mac  
 start index.html # Windows
 
