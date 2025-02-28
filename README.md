@@ -27,23 +27,23 @@ start index.html # Windows
 # 🖥️ Project Structure
 
 /chefcurry-website <br>
-├── index.html                     # Main HTML file <br>
-├── portfolio.html                 # Portfolio HTML file<br>
-├── all the others .html           # These HTML files are just my projects<br>
-├── styles.css                     # General CSS styles for layout<br>
-├── components.css                 # General CSS styles for animations<br>
-├── project.css                    # Custom CSS styles for the projects<br>
-├── dark-mode.css                  # CSS for dark mode<br>
-├── portfolio.css                  # CSS styles for the portfolio page<br>
-├── script.js                      # JavaScript for general interactivity<br>
-├── dark-mode.js                   # JavaScript for dark mode<br>
-├── waves.js                       # JavaScript for dynamic background<br>
-├── starfish.js                    # JavaScript for aesthetics<br>
-├── portfolio.js                   # JavaScript for portfolio page<br>
-├── project.js                     # JavaScript for the projects<br>
-├── documents/                     # Personal Documents<br>
-├── images/                        # Image assets<br>
-└── README.md                      # Project documentation<br>
+├── index.html -------------------- # Main HTML file <br>
+├── portfolio.html ---------------- # Portfolio HTML file<br>
+├── all the others .html ---------- # These HTML files are just my projects<br>
+├── styles.css -------------------- # General CSS styles for layout<br>
+├── components.css ---------------- # General CSS styles for animations<br>
+├── project.css ------------------- # Custom CSS styles for the projects<br>
+├── dark-mode.css ----------------- # CSS for dark mode<br>
+├── portfolio.css ----------------- # CSS styles for the portfolio page<br>
+├── script.js --------------------- # JavaScript for general interactivity<br>
+├── dark-mode.js ------------------ # JavaScript for dark mode<br>
+├── waves.js ---------------------- # JavaScript for dynamic background<br>
+├── starfish.js ------------------- # JavaScript for aesthetics<br>
+├── portfolio.js ------------------ # JavaScript for portfolio page<br>
+├── project.js -------------------- # JavaScript for the projects<br>
+├── documents/ -------------------- # Personal Documents<br>
+├── images/ ----------------------- # Image assets<br>
+└── README.md --------------------- # Project documentation
 
 ## 📜 License
 This project is licensed under the CC BY-NC-ND 4.0 License (https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en) – feel free to modify and use it!
