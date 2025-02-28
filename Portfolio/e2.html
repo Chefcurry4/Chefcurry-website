@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFD on Hydrogen Engine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <canvas id="waveCanvas"></canvas>
+    <div id="content">
+        <nav class="top-nav">
+            <div class="logo">Massimo Perfetti</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+
+    <section class="article-section" id="article">
+            <h1 class="title">Start Up Contribution: E2 Engine</h1>
+            <br>
+            <p class="article-date">Jan 7, 2025 ・ 2 min read</p>
+            
+            <br>
+        <div class="project-thesis">
+                <h3 class="sub-title">🚀 E2 Engine & My Contribution</h3>
+                <p class="project-description">
+                    E2 Engine is an innovative startup developing a turbomachinery-led hydrogen engine, currently in the Validation Lab at YES!Delft, TU Delft's leading startup incubator. <br>
+                    From November 2024 to January 2025, I joined the team as a side project, playing a key role in the validation phase; I collaborated with the internal R&D team to establish a proof of concept for the innovative combustion system. 
+                    This involved <strong>ANSYS Fluent CFD analysis</strong>, <strong>turbine blade shape optimization</strong>, and <strong>fuel-injection modeling</strong> to assess the feasibility of the technology. 
+                </p>
+
+                <div class="project-list-container">
+                    <h3 class="sub-title">🔬 Key Engineering Tasks:</h3>
+                    <ul class="project-list" stile="color: chocolate;">
+                        <li>➡️ Proof of Concept Development: Simulated the axial turbine system to determine its power generation potential.</li>
+                        <li>➡️ CFD-Based Turbine Blade Optimization: Designed and tested multiple blade configurations in ANSYS Fluent, refining the shape for maximum aerodynamic efficiency.</li>
+                        <li>➡️ ANSYS Fluent vs. ANSYS CFX Comparison: Cross-validated simulation results between the two solvers to ensure accuracy.</li>
+                        <li>➡️ CAD Design & Integration: Modeled critical components in SolidWorks for structural analysis and system integration.</li>
+                    </ul>
+                </div>
+
+                <br>
+
+                <h3 class="sub-title">📊 CFD Analysis</h3>
+                <p class="project-description">
+                    A significant part of my contribution focused on CFD to evaluate the efficiency of the hydrogen-powered turbine. 
+                    The simulations provided insights into key performance indicators such as:
+                </p>
+
+                <ul class="project-list">
+                    <li>➡️ <strong>Velocity Profiles & Flow Streamlines:</strong> Ensured uniform flow distribution and minimized turbulence-induced losses.</li>
+                    <li>➡️ <strong>Blade Pressure Distribution:</strong> Identified high-stress zones and optimized the curvature of the turbine blades.</li>
+                    <li>➡️ <strong>Velocity Distributions:</strong> Extrapolated velocities of the stream after it approaches the rotor turbines.</li>
+                </ul>
+                <br>
+                <br>
+
+                <div class="image-container">
+                    <div class="image-wrapper">
+                        <img src="images/e2-1.png" class="article-image">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="images/e2-2.png" class="article-image">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="images/e2-3.png" class="article-image">
+                    </div>
+                </div>
+
+                <br>
+
+                <h3 class="sub-title">📖 More Readings</h3>
+                <p class="project-description">
+                    Hydrogen combustion in gas turbines is an evolving field with significant research efforts worldwide. Below are some of the key academic papers and resources that provide deeper insights:
+                </p>
+
+                <ul class="project-list">
+                    <li>📄 <a href = "https://www.researchgate.net/publication/385411329_ADVANCEMENTS_AND_CHALLENGES_IN_HYDROGEN_GAS_TURBINE_COMBUSTION_A_COMPREHENSIVE_REVIEW">Oyinbonogha, A. (2024). ADVANCEMENTS AND CHALLENGES IN HYDROGEN GAS TURBINE COMBUSTION: A COMPREHENSIVE REVIEW. </a></li>
+                    <li>📄 <a href = "https://www.researchgate.net/publication/239399848_Using_Hydrogen_as_Gas_Turbine_Fuel">Lozza, G., Mazzocchi, L. (2024). Using Hydrogen as Gas Turbine Fuel. </a></li>
+                </ul>
+
+                <p class="project-description">
+                </p>
+                </div>
+            </div>
+        </section>
+
+            <div class="button-group">
+                <a href="mailto:m.perfetti@student.tudelft.nl" class="mail-link">📧 MAIL</a>
+            </div>
+        </section>
+
+        <a href="portfolio.html" class="see-more-btn">See More Projects...</a>
+
+        <footer style="color: white;">
+            <p>&copy; 2025 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" target="_blank">BY NC ND 4.0</a></p>
+        </footer>
+
+        <script src="script.js"></script>
+        <script src="dark-mode.js"></script>
+        <script src="waves.js"></script>
+        <script src="project.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+/* ✅ General Portfolio Styling */
+.portfolio-section {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.section-title {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.portfolio-description {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    opacity: 1;
+}
+
+/* ✅ Carousel Container */
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 700px; 
+    margin: auto;
+}
+
+.carousel-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff !important;
+}
+
+/* ✅ Wrapper for Scrolling Effect */
+.carousel-wrapper {
+    overflow: hidden;
+    width: 700px; 
+    height:430px;
+}
+
+/* ✅ Track that holds the cards */
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.6s ease-in-out;
+    width: max-content;
+}
+
+/* ✅ Individual Project Cards */
+.project-card {
+    width: 320px;
+    flex: 0 0 auto;
+    background: white;
+    height: 400px; 
+    object-fit: cover; 
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Card Image Styling */
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px; 
+    object-fit: cover; 
+    margin-bottom: 10px;
+}
+
+/* ✅ Hover effect */
+.project-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Category & Text Styling */
+.category {
+    color: #ff7675 !important;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project-card h2, 
+.project-card p, 
+.project-card .date {
+    color: black !important;
+}
+
+.project-card .date {
+    font-size: 0.7em;
+}
+
+/* ✅ Navigation Buttons */
+.carousel-btn {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    position: absolute;
+    top: 50%;
+}
+
+/* ✅ Left & Right Button Position */
+#prevBtnML, #prevBtnCFD {
+    left: -50px;
+}
+
+#nextBtnML, #nextBtnCFD {
+    right: -50px;
+}
+
+/* ✅ Button Disabled State */
+.carousel-btn.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+/* ✅ Section Divider */
+.section-divider {
+    width: 80%;
+    border: 1px solid white;
+    margin: 40px 0;
+}
+
+/* Remove underline effect link */
+.project-card-link {
+    text-decoration: none;
+}
+
+.in-progess {
+    text-decoration: none;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: center;
+    width: 50%;
+    max-width: 400px;
+}
+
+.popup-content {
+    position: relative;
+    padding: 20px;
+    background: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+

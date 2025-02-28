@@ -1,0 +1,238 @@
+/* 🌟 Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 🔥 Moving Light Effect */
+.moving-light {
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 80%);
+    pointer-events: none;
+    border-radius: 50%;
+    filter: blur(30px);
+    z-index: 9999;
+    transition: transform 0.05s linear;
+}
+
+/* Hide the moving light effect on small screens */
+@media (max-width: 768px) {
+    .moving-light {
+        display: none;
+    }
+}
+
+/* Hide scrollbar */
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* 🎨 Smooth Scaling for Interactive Elements */
+button, .contact-item {
+    transition: transform 0.2s;
+}
+
+button:hover, .contact-item:hover {
+    transform: scale(1.05);
+}
+
+/* 🌊 Simaluting ocean light */
+@keyframes lightReflection {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+    animation: lightReflection 5s infinite linear;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* 🌟 Wave Animation */
+#waveCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; 
+    pointer-events: none; 
+}
+
+#content {
+    position: relative;
+    z-index: 1; 
+}
+
+#waveCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; 
+    pointer-events: none; 
+    transition: background 0.3s ease-out;
+}
+
+/* 🌟 Container to control positioning */
+.warning-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; 
+}
+
+/* 🌟 Container to control positioning */
+.warning-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    margin-top: 40px; 
+}
+
+/* ⚠️ Warning Box  */
+.warning-box {
+    background-color: #fff5f5; 
+    color: #b30000; 
+    border: 2px solid #b30000;
+    padding: 15px 25px;
+    border-radius: 8px;
+    width: 50%; 
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(+50% , 0%);
+    transition: background 0.3s, color 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+} 
+
+/* ⚠️ Warning Icon */
+.warning-icon {
+    font-size: 1.5rem;
+    color: #b30000;
+    border: 2px solid #b30000; 
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    font-weight: bold;
+}
+
+.load-more-container {
+    color: rgb(251, 251, 251) !important;  
+}
+
+/* Load More Projects Button */
+.load-more-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.load-more-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white !important;
+    background-color: #ff9900 !important;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.load-more-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* 🌟 Preloader Styling */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Logo container */
+#logo-container {
+    position: relative;
+    width: 120px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text: "MP" */
+#mp-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Killer Whale SVG */
+#killer-whale {
+    position: absolute;
+    width: 100px; 
+    height: auto;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Animated spinner */
+.spinner {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border: 5px solid white;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Animation Rotation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Remove underline effect link */
+.project-card-link {
+    text-decoration: none;
+}
