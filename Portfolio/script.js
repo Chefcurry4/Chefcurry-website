@@ -223,18 +223,28 @@ document.addEventListener("DOMContentLoaded", () => {
  // 🔹 Loader Animation
 document.addEventListener("DOMContentLoaded", () => {
     const mpText = document.getElementById("mp-text");
+    const loadingMessage = document.createElement("p");
+    loadingMessage.textContent = "Loading may take a while at the beginning.";
+    loadingMessage.style.fontSize = "14px";
+    loadingMessage.style.color = "#fff";
+    loadingMessage.style.textAlign = "center";
+    loadingMessage.style.marginTop = "10px";
+    mpText.parentNode.appendChild(loadingMessage);
+
     const preloader = document.getElementById("preloader");
 
     function animateLoader() {
         mpText.style.opacity = "0";  
+        loadingMessage.style.opacity = "0";
         
         setTimeout(() => {
             mpText.style.opacity = "1";
+            loadingMessage.style.opacity = "1";
         }, 500);
     }
 
     // Repeat loader animation
-    const animationInterval = setInterval(animateLoader, 1000);
+    const animationInterval = setInterval(animateLoader, 2500);
 
     // When page is loaded, hide the preloader
     window.addEventListener("load", () => {
