@@ -223,23 +223,20 @@ document.addEventListener("DOMContentLoaded", () => {
  // 🔹 Loader Animation
 document.addEventListener("DOMContentLoaded", () => {
     const mpText = document.getElementById("mp-text");
-    const whaleImg = document.getElementById("killer-whale");
     const preloader = document.getElementById("preloader");
 
     function animateLoader() {
         mpText.style.opacity = "0";  
-        whaleImg.style.opacity = "1";
-
+        
         setTimeout(() => {
-            whaleImg.style.opacity = "0";
             mpText.style.opacity = "1";
-        }, 1500);
+        }, 500);
     }
 
     // Repeat loader animation
     const animationInterval = setInterval(animateLoader, 1000);
 
-    // WHen page is loaded, hide the preloader
+    // When page is loaded, hide the preloader
     window.addEventListener("load", () => {
         clearInterval(animationInterval); 
         preloader.style.opacity = "0";
