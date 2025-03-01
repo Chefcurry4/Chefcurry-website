@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     feedbackForm.addEventListener("submit", (event) => {
         const feedbackValue = feedbackInput.value.trim(); 
 
-        if (!feedbackSelected || feedbackValue === "" || feedbackValue === "None") {
+        if (!feedbackSelected || feedbackValue === "") {
             alert("Please scroll to select your feedback.");
             event.preventDefault();
             return;
