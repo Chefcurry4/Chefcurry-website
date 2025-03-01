@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Massimo Perfetti</title>
+    <link rel="icon" type="image/png" href="images/MP logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <canvas id="waveCanvas"></canvas>
+    
+    <div id="content">
+        <nav class="top-nav">
+            <div class="logo" id="logo">
+                <img src="images/MP logo.png" alt="Massimo Perfetti" class="profile-pic">
+                Massimo Perfetti
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" target="_blank" rel="noopener noreferrer">Home</a></li>
+            </ul>
+        </nav>
+        <section class="portfolio-section">
+            <h2 class="section-title">My Portfolio</h2>
+            <br>
+            <br>
+            <p class="portfolio-description">I love creating and exploring new ideas. Below is a selection of projects I have worked on, though <strong><span style="color: #ffffff ;">not all works are uploaded yet as this website is still under development!</span></strong> </p>
+            <hr class="section-divider">
+            <!-- Machine Learning Projects Carousel -->
+            <div class="carousel-container">
+                <h2>Machine/Deep Learning Projects</h2>
+                <br>    
+                <button id="prevBtnML" class="carousel-btn">&#60;</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="ml-projects">
+                        <a href="el-power-systems.html" class="project-card-link">
+                            <div class="project-card">
+                                    <img src="images/nn-electrical.gif" class="project-img" alt="Power Grids Poster">
+                                    <h3 class="category">MACHINE LEARNING</h3> 
+                                    <h2>-Neaural Networks for Electrical Systems-</h2>
+                                    <p>Predict demand-supply compensation of power grids through FNNs and GNNs.</p>
+                                    <span class="date">Dec 18, 2024</span>
+                            </div>
+                        </a>
+                            
+                        <!-- More flashcards ML -->
+                        <a href="iv.html" class="project-card-link">
+                            <div class="project-card">
+                                <img src="images/iv.gif" class="project-img" alt="Intelligent Vehicles">
+                                <h3 class="category">DEEP LEARNING/COMPUTER VISION</h3> 
+                                <h2>-Deep Learning for Pedestrian Classifier-</h2>
+                                <p>Comparing different models for pedestrian classification using real-world data.</p>
+                                <span class="date">Jan 29, 2025</span>
+                            </div>
+                        </a>
+
+                        <a href="dubins vehicle dynamics.html" class="project-card-link">
+                            <div class="project-card">
+                                <img src="images/ML-ss.gif" class="project-img" alt="MAchine Learning for Systems and Control">
+                                <h3 class="category">DEEP LEARNING/REINFORCEMENT LEARNING</h3> 
+                                <h2>-ML for Systems and Control-</h2>
+                                <p> &nbsp; Dubins Vehicle Path Predictions with NNs and ResNets.</p>
+                                <span class="date">Jan 28, 2025</span>
+                            </div>
+                        </a>
+
+                        <div class="in-progress" data-inprogress="true">
+                            <div class="project-card">
+                                <img src="images/kaggle.gif" class="project-img" alt="Kaggle">
+                                <h3 class="category" class="in-progress" data-inprogress="true" style="cursor: pointer;">MACHINE LEARNING</h3> 
+                                <h2 class="in-progress" data-inprogress="true" style="cursor: pointer;">-My first Kaggle Works-</h2>
+                                <p class="in-progress" data-inprogress="true" style="cursor: pointer;">Exploring and benchmarking machine learning models on <it>Kaggle.com</it>.</p>
+                                <p class="in-progress" data-inprogress="true" style="color: #ff7675 !important; font-weight: bold; cursor: pointer;">
+                                    In Progress...
+                                </p>
+                                <span class="date">Feb 20, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="nextBtnML" class="carousel-btn">&#62;</button>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- CFD Projects Carousel -->
+            <div class="carousel-container">
+                <h2>CFD Projects</h2>
+                <br>    
+                <button id="prevBtnCFD" class="carousel-btn">&#60;</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="cfd-projects">
+                        <div class="in-progress" data-inprogress="true">
+                            <div class="project-card">
+                                <img src="images/flow.gif" class="project-img" alt="CFD Analysis">
+                                <h3 class="category" class="in-progress" data-inprogress="true" style="cursor: pointer;">CFD/THERMODYNAMICS</h3>
+                                <h2 class="in-progress" data-inprogress="true" style="cursor: pointer;">2D Analysis of DARPA SUBOFF Hydrodynamics & PCB Cooling.</h2>
+                                <p class="in-progress" data-inprogress="true" style="cursor: pointer;">2D axisymmetric simulations and  transient thermal states simulations.</p>
+                                <p class="in-progress" data-inprogress="true" style="color: #ff7675 !important; font-weight: bold; cursor: pointer;">In Progess...</p>
+                                <span class="date">March 2, 2025</span>
+                            </div>
+                        </div>
+                        <!-- More flashcards CFD -->
+                        <a href="e2.html" class="project-card-link">
+                            <div class="project-card">
+                                <img src="images/e2-engine.gif" class="project-img" alt="E2 Engine">
+                                <h3 class="category">CFD/TURBOMACHINERY</h3> 
+                                <h2>-CFD Optimization for Hydrogen Turbines-</h2>
+                                <p>Used Ansys Fluent to enhance Pelton-like turbine efficiency for a hydrogen engine.</p>
+                                <span class="date">Jan 7, 2025</span>
+                            </div>
+                        </a>
+
+                        <a href="thesis.html" class="project-card-link">
+                            <div class="project-card">
+                                <img src="images/thesis gif.gif".gif class="project-img" alt="Ethos Energy">
+                                <h3 class="category">THERMO-STRUCTURAL ANALYSIS</h3> 
+                                <h2>-Material Optimization for Gas Turbine Discs (Thesis Internship)-</h2>
+                                <p>Analyzed different alloys performances in gas turbine discs using ANSYS Mechanical.</p>
+                                <span class="date">Jul 25, 2024</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button id="nextBtnCFD" class="carousel-btn">&#62;</button>
+            </div>
+        </section>
+        
+        <hr class="section-divider">
+
+        <!-- Other Projects -->
+        <div class="carousel-container">
+            <h2>Other Projects</h2>
+            <br>    
+            <button id="prevBtnCFD" class="carousel-btn">&#60;</button>
+            <div class="carousel-wrapper">
+                <div class="carousel-track" id="other-projects">
+                    <a href="mywebsite.html" class="project-card-link">
+                        <div class="project-card">
+                            <img src="images/web-dev gif.gif" class="project-img" alt="My website">
+                            <h3 class="category">WEB DEVELOPMENT</h3>
+                            <h2>-Creating My Own Website-</h2>
+                            <p>Coded in HTML, CSS, and JavaScript to give life to this website! Hope you enjoy it! ✨</p>
+                            <span class="date">Feb 26, 2025</span>
+                        </div>
+                    </a>
+                    <!-- More flashcards other projects -->
+                    <a href="gripper.html" class="project-card-link">
+                        <div class="project-card">
+                            <img src="images/gripper-gif.gif" class="project-img" alt="My website">
+                            <h3 class="category">PRODUCT DESIGN/COMPUTER VISION</h3>
+                            <h2>-End Effector-</h2>
+                            <p>Building a gripper's end effector to detect and grab objects.</p>
+                            <span class="date">Jan 17, 2024</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button id="nextBtnCFD" class="carousel-btn">&#62;</button>
+        </div>
+    </section>
+    <hr class="section-divider">
+        <!-- 🔹 Contact Section -->
+        <div class="contact-container">
+            <a href="mailto:massimoperfetti4@gmail.com" class="contact-item">
+                <img src="images/email-logo.jpg" alt="Email"> massimoperfetti4@gmail.com
+            </a>
+            <a href="mailto:m.perfetti@student.tudelft.nl" class="contact-item">
+                <img src="images/tu-logo.png" alt="Email"> m.perfetti@student.tudelft.nl
+            </a>
+            <a href="https://linkedin.com/in/mperfetti4" target="_blank" class="contact-item">
+                <img src="images/in.png.png" alt="LinkedIn"> LinkedIn
+            </a>
+            <a href="https://github.com/Chefcurry4" target="_blank" class="contact-item">
+                <img src="images/github-icon.png" alt="GitHub"> GitHub
+            </a>
+        </div>
+        <br>
+        <br>    
+        <br>
+        <br> 
+        <br>
+        <br> 
+        <!-- 🔹 Footer -->
+        <footer style="color: white;">
+            <p>&copy; 2025 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" target="_blank">BY NC ND 4.0 </a></p>
+        </footer>
+
+        <!-- Popup -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <p style="color: rgb(238, 6, 87) !important;"><strong> Work is still in progress, come back soon to see more info regarding this project!</strong></p>
+            </div>
+        </div>
+
+        <script src="dark-mode.js"></script>
+        <script src="waves.js"></script>
+        <script src="script.js"></script>
+        <script src="portfolio.js"></script>
+    </div>
+</body>
+</html>

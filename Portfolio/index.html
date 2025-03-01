@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Massimo Perfetti</title>
+    <link rel="icon" type="image/png" href="images/MP logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="logo-container">
+            <span id="mp-text">MP</span>
+            <img id="killer-whale" src="kw.svg" alt="Killer Whale">
+        </div>
+        <div class="spinner"></div>
+    </div>
+
+    <!-- 🌊 Canvas for Waves -->
+    <canvas id="waveCanvas"></canvas>
+
+    <div id="content">
+        <!-- 🔹 Navbar -->
+        <nav class="top-nav">
+            <div class="logo" id="logo">
+                <img src="images/MP logo.png" alt="Massimo Perfetti" class="profile-pic">
+            </div>
+            <ul class="nav-links">
+                <!-- <li><a href="#posts">Posts</a></li> -->
+                <li><a href="#projects"> Projects </a></li>
+                <li><a href="#publications"> Publications </a></li>
+            </ul>
+        </nav>
+
+        <!-- 🔹 Hero Section -->
+        <div class="hero-about-container">
+            <header class="hero" style="background-image: url('images/killer-whale.jpg');">
+                <div class="overlay">
+                    <h1>Massimo Perfetti</h1>
+                    <h2>MSc in MecEng | TUDelft, EPFL, PoliTO</h2>
+                    <br>
+                    <h2>Interests:</h2>
+                    <ul class="hero-list">
+                        <li>Fluid dynamics, CFD</li>
+                        <li>Machine | Deep Learning</li>
+                        <li>Computer Vision</li>
+                    </ul>
+                </div>
+            </header>
+
+            <!-- 🔹 About Me -->
+            <section id="about" class="about-overlay" style="background-image: url('images/killer-whale.jpg');">
+                <h2>About Me</h2>
+                <p>I am a Mechanical Engineer with a passion for both Fluid Dynamics and Machine Learning. 
+                Currently pursuing my Master's in Mechanical Engineering at TU Delft, I specialize in both fields.
+                Beyond my technical interests, I enjoy logic games, basketball, chess, drawing, and competitive programming on LeetCode.
+                This website showcases my most significant projects and serves as my professional portfolio. Enjoy exploring my work!</p>
+            </section>
+        </div>
+
+        <!-- 🔹 Warning Box -->
+        <div class="warning-box" id="warningBox">
+            <span class="warning-icon">ℹ️</span>
+            <p id="warningText">This site is currently under development and is updated in my free time.<br>
+                Feel free to contact me if you have any suggestions!
+            </p>   
+        </div>
+        
+        <!-- 🔹 Recent Posts: DEVELOP THIS IN THE FUTURE -->
+        <!--
+        <section id="posts" class="section-dark">
+            <h2 class="recent-posts-heading">Recent Posts</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 post-card" data-post-id="1">
+                        <img src="post1.jpg" class="card-img-top" alt="Turbulence Models">
+                        <div class="card-body">
+                            <h5 class="card-title">Exploring Turbulence Models</h5>
+                            <p class="card-text">A deep dive into different turbulence models used in CFD.</p>
+                            <p class="status-message" id="status-1"></p>
+                            <a href="post1.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 post-card" data-post-id="2">
+                        <img src="post2.jpg" class="card-img-top" alt="Machine Learning in Aerodynamics">
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning in Aerodynamics</h5>
+                            <p class="card-text">How ML techniques are enhancing aerodynamic simulations.</p>
+                            <p class="status-message" id="status-2"></p>
+                            <a href="post2.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        -->
+
+        <!-- 🔹 Projects Section -->
+        <section id="projects" class="section-light">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2 class="recent-posts-heading">Projects</h2>
+            <br>
+            <br>    
+            <div class="projects-container">
+                <a href="iv.html" class="project-card-link">
+                    <div class="project-card">
+                            <img src="images/iv.gif" class="project-img" alt="Intelligent Vehicles Poster">
+                            <h3 class="category">DEEP LEARNING/COMPUTER VISION</h3>
+                            <h2 class="project-title">-Pedestrian Classifier for Intelligent Vehicles-</h2>
+                            <p>Comparing different models for pedestrian classification using real-world data.</p>
+                            <span class="date">Jan 29, 2025</span>
+                    </div>
+                </a>
+
+                <a href="e2.html" class="project-card-link">
+                    <div class="project-card">
+                        <img src="images/e2-engine.gif" class="project-img" alt="e2 Poster">
+                        <h3 class="category">CFD/TURBOMACHINERY</h3>
+                        <h2 class="project-title">-CFD Optimization for Hydrogen Turbines-</h2>
+                        <p>Used Ansys Fluent to enhance Pelton-like turbine efficiency for a hydrogen engine.</p>
+                        <span class="date">Jan 7, 2025</span>
+                    </div>
+                </a>
+                
+                <a href="el-power-systems.html" class="project-card-link">
+                    <div class="project-card">
+                        <img src="images/nn-electrical.gif" class="project-img" alt="Power Grids Poster">
+                        <h3 class="category">MACHINE LEARNING</h3>
+                        <h2 class="project-title">-Neaural Networks for Electrical Systems-</h2>
+                        <p>Predict demand-supply compensation of power grids through FNNs and GNNs.</p>
+                        <span class="date">Dec 18, 2024</span>
+                    </div>
+                </a>
+            </div>
+            
+
+            <!-- 🔹 Load More Projects Button -->
+            <div class="load-more-container">
+                <a href="portfolio.html" target="_blank" class="load-more-btn">Load full Portfolio...</a>
+            </div>
+        </section>
+
+        <!-- 🔹 Publications -->
+        <section id="publications" class="section-dark">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2 class="recent-posts-heading"> Publications</h2>
+            <div class="publications-list">
+                <div class="publication-item">
+                    <p class="publications-p"><strong>Massimo Perfetti</strong> (2025). <a href="https://github.com/Chefcurry4/-Dubins-Vehicle-Path-Planning-with-NNs./tree/main/NNs%20for%20Predicting%20Dubins%20Vehicle%20Dynamics" class="pub-link" style="color: #ff7675 !important;">Machine Learning for Systems and Control: Residual Neural Network Dubins Dynamics Motion Planning.</a>TU Delft Project.</p>
+                    <br>
+                    <a href="https://github.com/Chefcurry4/-Dubins-Vehicle-Path-Planning-with-NNs./tree/main/NNs%20for%20Predicting%20Dubins%20Vehicle%20Dynamics" class="pub-link"> <i class="fas fa-code">CODE</i></a>
+                    <a href="https://github.com/Chefcurry4/-Dubins-Vehicle-Path-Planning-with-NNs./tree/main/NNs%20for%20Predicting%20Dubins%20Vehicle%20Dynamics/source%20document" class="pub-link"><i class="fa-regular fa-file">SOURCE DOCUMENTS</i></a> 
+                </div>
+
+                <div class="publication-item">
+                    <p class="publications-p"><strong>Massimo Perfetti</strong> (2025). <a href="https://github.com/Chefcurry4/Neural-Network-for-Electrical-System" class="pub-link" style="color: #ff7675 !important;">Personal Website Development.</a>Personal Project.</p>
+                    <br>
+                    <a href="https://github.com/Chefcurry4/Chefcurry-website" class="pub-link"> <i class="fas fa-code">CODE</i></a>
+                    <!-- <a href="sitemap.png" class="pub-link"><i class="fa-solid fa-sitemap">SITEMAP</i></a> -->
+                </div>
+
+                <div class="publication-item">
+                    <p class="publications-p"><strong>Massimo Perfetti</strong>, Pasquale De Lucia (2025). <a href="https://github.com/Chefcurry4/Neural-Network-for-Electrical-System" class="pub-link" style="color: #ff7675 !important;">Physics-informed FNNs and GNNs for predicting Electrical Systems.</a>TU Delft Project.</p>
+                    <br>
+                    <a href="https://github.com/Chefcurry4/Neural-Network-for-Electrical-System" class="pub-link"> <i class="fas fa-code">CODE</i></a>
+                    <a href="documents/Project_ML_De_Lucia_Perfetti.pdf" class="pub-link"><i class="fa-solid fa-file-pdf">PDF</i></a> 
+                    <a href="https://github.com/Chefcurry4/Neural-Network-for-Electrical-System/blob/main/source%20document%20notebook.ipynb" class="pub-link"><i class="fa-regular fa-file">SORCE DOCUMENT</i></a>
+                </div>
+
+                <div class="publication-item">
+                    <p class="publications-p"><strong>Massimo Perfetti</strong> (2024). <a href="documents/Thesis.pdf" class="pub-link" style="color: #ff7675 !important;">Impact of material change on thermo-structural
+                        behaviour of F-class gas turbine discs.</a>Bachelor's Thesis.</p>
+                    <br>
+                    <a href="documents/Thesis.pdf" class="pub-link"><i class="fa-solid fa-file-pdf">PDF</i></a>
+                    <a href="cite_thesis.bib" class="pub-link"><i class="fa-solid fa-quote-left">CITE</i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🔹 Contact Section -->
+        <section id="contact" class="section-light">
+            <h2 class="recent-posts-heading">Contacts</h2>
+            <p class="recent-posts-heading">Feel free to reach out to me!</p>
+            <div class="contact-container">
+                <a href="documents/CV Massimo Perfetti CFD.pdf" target="_blank" class="contact-item">
+                    <img src="images/cv-logo.png" alt="CV"> Download CV for CFD
+                </a>
+                <a href="documents/CV Massimo Perfetti ML.pdf" target="_blank" class="contact-item">
+                    <img src="images/cv-logo.png" alt="CV"> Download CV for ML
+                </a>
+                <a href="mailto:massimoperfetti4@gmail.com" class="contact-item">
+                    <img src="images/email-logo.jpg" alt="Email"> massimoperfetti4@gmail.com
+                </a>
+                <a href="mailto:m.perfetti@student.tudelft.nl" class="contact-item">
+                    <img src="images/tu-logo.png" alt="Email"> m.perfetti@student.tudelft.nl
+                </a>
+                <a href="https://linkedin.com/in/mperfetti4" target="_blank" class="contact-item">
+                    <img src="images/in.png.png" alt="LinkedIn"> LinkedIn
+                </a>
+                <a href="https://github.com/Chefcurry4" target="_blank" class="contact-item">
+                    <img src="images/github-icon.png" alt="GitHub"> GitHub
+                </a>
+                <a href="https://leetcode.com/u/Chefcurry4/" target="_blank" class="contact-item">
+                    <img src="images/leetcode-logo.png" alt="Leetcode"> Leetcode
+                </a>
+            </div>
+        </section>
+    
+        <!-- 🔹 Footer -->
+        <footer style="color: white;">
+            <p>&copy; 2025 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" target="_blank">BY NC ND 4.0 </a></p>
+        </footer>
+
+        <!-- 🔹 Scripts -->
+        <script src="script.js"></script>
+        <script src="dark-mode.js"></script>
+        <script src="waves.js"></script>
+
+    </div>
+
+</body>
+</html>
