@@ -1,14 +1,14 @@
 /* 🌙 General Dark Mode */
 .dark-mode {
-    background: #121212 !important;
-    color: white !important;
+    background: #121212;
+    color: white;
     transition: background 0.3s, color 0.3s;
 }
 
 /* 🔹 Navbar Dark Mode */
 .dark-mode .top-nav {
-    background: black !important;
-    color: white !important;
+    background: black;
+    color: white;
 }
 
 .dark-mode .nav-links li a {
@@ -20,9 +20,6 @@
 }
 
 /* 🔹 Dark Mode Waves */
-.dark-mode canvas {
-    filter: brightness(0.4) contrast(1.3); 
-}
 
 /* 🔹 Text in Front of Waves (Fix Visibility) */
 .dark-mode .wave-text {
@@ -121,26 +118,25 @@
 .project-card h2,
 .project-card p,
 .project-card .date {
-    color: black !important;  
+    color: black;
 }
 
 .project-card .category {
-    color: #ff7675 !important;
+    color: #ff7675;
 }
 
 .publications-p {
-    color: black !important;
+    color: black;
 }
 
 .pub-link {
     text-decoration: none;
     font-weight: bold;
     margin-right: 10px;
-    color: #007BFF !important;
+    color: #007BFF;
     transition: color 0.3s;
 }
 
 .pub-link:hover {
-    color: #0056b3 !important;
+    color: #0056b3;
 }
-
