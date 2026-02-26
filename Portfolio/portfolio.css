@@ -1,4 +1,4 @@
-/* ✅ General Portfolio Styling */
+/* Portfolio Styling */
 .portfolio-section {
     text-align: center;
     padding: 50px 20px;
@@ -6,17 +6,17 @@
 }
 
 .section-title {
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: bold;
 }
 
 .portfolio-description {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-bottom: 30px;
-    opacity: 1;
+    opacity: 0.9;
 }
 
-/* ✅ Carousel Container */
+/* Carousel Container */
 .carousel-container {
     display: flex;
     flex-direction: column;
@@ -28,18 +28,18 @@
 
 .carousel-container h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #ffffff !important;
 }
 
-/* ✅ Wrapper for Scrolling Effect */
+/* Wrapper for Scrolling Effect */
 .carousel-wrapper {
     overflow: hidden;
     width: 700px; 
-    height:430px;
+    height: 430px;
 }
 
-/* ✅ Track that holds the cards */
+/* Track that holds the cards */
 .carousel-track {
     display: flex;
     gap: 20px;
@@ -47,7 +47,7 @@
     width: max-content;
 }
 
-/* ✅ Individual Project Cards */
+/* Individual Project Cards */
 .project-card {
     width: 320px;
     flex: 0 0 auto;
@@ -60,7 +60,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ✅ Card Image Styling */
+/* Card Image Styling */
 .project-card img {
     width: 100%;
     border-radius: 10px;
@@ -69,13 +69,13 @@
     margin-bottom: 10px;
 }
 
-/* ✅ Hover effect */
+/* Hover effect */
 .project-card:hover {
     transform: scale(1.01);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 16px rgba(0, 80, 200, 0.2);
 }
 
-/* ✅ Category & Text Styling */
+/* Category & Text Styling */
 .category {
     color: #ff7675 !important;
     font-size: 0.9em;
@@ -93,7 +93,7 @@
     font-size: 0.7em;
 }
 
-/* ✅ Navigation Buttons */
+/* Navigation Buttons */
 .carousel-btn {
     background: rgba(255, 255, 255, 0.8);
     border: none;
@@ -106,25 +106,25 @@
     top: 50%;
 }
 
-/* ✅ Left & Right Button Position */
-#prevBtnML, #prevBtnCFD {
+/* Left & Right Button Position */
+#prevBtnML, #prevBtnCFD, #prevBtnOther {
     left: -50px;
 }
 
-#nextBtnML, #nextBtnCFD {
+#nextBtnML, #nextBtnCFD, #nextBtnOther {
     right: -50px;
 }
 
-/* ✅ Button Disabled State */
+/* Button Disabled State */
 .carousel-btn.disabled {
     opacity: 0.3;
     pointer-events: none;
 }
 
-/* ✅ Section Divider */
+/* Section Divider */
 .section-divider {
     width: 100%;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     margin: 40px 0;
 }
 
@@ -133,8 +133,11 @@
     text-decoration: none;
 }
 
-.in-progess {
-    text-decoration: none;
+/* In-progress label */
+.in-progress-label {
+    color: #d63031 !important;
+    font-weight: bold;
+    font-size: 0.9em;
 }
 
 /* Popup Styles */
@@ -159,8 +162,12 @@
     position: relative;
     padding: 20px;
     background: white;
-    color: black;
+    color: #333;
     border-radius: 10px;
+}
+
+.popup-message {
+    color: #d63031 !important;
 }
 
 .close-btn {
