@@ -1,4 +1,4 @@
-/* 🌟 Reset & General Styles */
+/* Reset & General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -15,19 +15,25 @@ body {
     transition: background 0.3s, color 0.3s; 
 }
 
-/* 🌟 Navigation Bar */
+/* Standardized Section Spacing */
+.section-light,
+.section-dark {
+    padding: 60px 30px;
+}
+
+/* Navigation Bar */
 .top-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 12px 30px;
     background-color: white;
     color: black;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
     z-index: 1000;
     transition: background 0.3s, color 0.3s;
 }
@@ -42,14 +48,14 @@ body {
 }
 
 .profile-pic {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     transition: transform 0.3s;
 }
 
 .profile-pic:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 .nav-links {
@@ -70,15 +76,15 @@ body {
     color: #007BFF;
 }
 
-/* 🌟 Hero & About Sections */
+/* Hero & About Sections */
 .hero-about-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
     gap: 20px;
-    max-width: 1400px;
-    margin: 50px auto;
+    max-width: 1200px;
+    margin: 40px auto;
     padding: 20px;
 }
 
@@ -86,12 +92,12 @@ body {
     flex: 1;
     min-width: 400px;
     max-width: 50%;
-    height: 500px;
+    height: 450px;
     transition: transform 0.3s;
 }
 
 .hero:hover, #about:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 .hero {
@@ -139,7 +145,7 @@ body {
     }
 }
 
-/* 🌟 Posts & Projects Grid */
+/* Posts & Projects Grid */
 .scroll-container {
     overflow-x: auto;
     white-space: nowrap;
@@ -157,7 +163,7 @@ body {
     background: white;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s, box-shadow 0.3s;
     width: 300px;
     display: inline-block;
@@ -165,8 +171,8 @@ body {
 }
 
 .project-item:hover, .post-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .project-item img {
@@ -236,8 +242,8 @@ body {
 }
 
 .publication-item:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .pub-link {
@@ -252,7 +258,7 @@ body {
     color: #0056b3 !important;
 }
 
-/* 🌟 Bootstrap Card Styling for Posts */
+/* Bootstrap Card Styling for Posts */
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -280,8 +286,8 @@ body {
 }
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .card-img-top {
@@ -326,13 +332,32 @@ body {
     color: white;
 }
 
-/* 🌟 Recent Posts Heading */
+/* Section Headings */
+.section-heading {
+    font-family: 'Garamond', serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+.contact-subtitle {
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Keep legacy class for backward compatibility */
 .recent-posts-heading {
     font-family: 'Garamond', serif;
-    font-weight: 900;
+    font-weight: 700;
     color: #ffffff;
-    font-size: 2rem; /* Adjust as needed */
+    font-size: 2rem;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 /* Projects Grid - Three in a Row */
@@ -354,18 +379,18 @@ body {
     color: #ff7675 !important;
 }
 
-/* 🌟 3D Flashcard */
+/* 3D Flashcard */
 .project-card {
     width: 350px; 
     height: 500px;
-    background: linear-gradient(135deg, #ffffff, rgb(249, 243, 237)) !important; /* Rende il bianco meno evidente */
+    background: linear-gradient(135deg, #ffffff, rgb(249, 243, 237)) !important;
     padding: 20px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
     overflow: hidden;
     perspective: 1000px; 
@@ -373,7 +398,7 @@ body {
     position: relative;
 }
 
-/* 🌟 Effetto on images to avoid distortions */
+/* Image styling */
 .project-card .project-img {
     width: 100%;
     height: 180px;
@@ -381,12 +406,12 @@ body {
     border-radius: 10px;
 }
 
-/* Better Hover effects */
+/* Subtle hover glow */
 .project-card:hover {
-    box-shadow: 0 10px 10px rgba(0, 4, 248, 0.8) !important;
+    box-shadow: 0 8px 28px rgba(0, 80, 200, 0.25) !important;
 }
 
-/* 🌟 Reflected light */
+/* Reflected light */
 .project-card::before {
     content: "";
     position: absolute;
@@ -394,7 +419,7 @@ body {
     left: 50%;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 50%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 10%, transparent 50%);
     transform: translate(-50%, -50%) scale(1.5);
     opacity: 0;
     transition: opacity 0.3s;
@@ -404,13 +429,25 @@ body {
     opacity: 1;
 }
 
+/* Publication links row */
+.pub-links-row {
+    margin-top: 8px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.pub-link-title {
+    color: #d63031 !important;
+}
+
 .project-list a {
-    color: #1e29fb; /* Giallo chiaro per alta visibilità */
-    text-decoration: none; /* Rimuove la sottolineatura */
+    color: #1e29fb;
+    text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
 .project-list a:hover {
-    color: #57adf9; /* Giallo ancora più chiaro quando passi sopra */
-    text-decoration: underline; /* Aggiunge un effetto visivo all'hover */
+    color: #57adf9;
+    text-decoration: underline;
 }

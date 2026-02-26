@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setupCarousel(".carousel-wrapper", "#ml-projects", "#prevBtnML", "#nextBtnML");
     setupCarousel(".carousel-wrapper", "#cfd-projects", "#prevBtnCFD", "#nextBtnCFD");
+    setupCarousel(".carousel-wrapper", "#other-projects", "#prevBtnOther", "#nextBtnOther");
 
     // 🔹 Remove unwanted hover scaling effect
     document.querySelectorAll('.project-card').forEach(card => {
